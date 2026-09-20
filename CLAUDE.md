@@ -20,7 +20,7 @@ Rebuilding the website for The Dr. Lawyer Law Group, an Arizona personal injury 
 
 ## Files
 
-- All pages live in the project root: `index.html`, `personal-injury.html`, `medical-malpractice.html`, `car-accidents.html`, `workers-compensation.html`, `wrongful-death.html`, `failure-to-diagnose.html`, `resources.html`, `contact.html`.
+- All pages live in the project root: `index.html`, `personal-injury.html`, `medical-malpractice.html`, `car-accidents.html`, `wrongful-death.html`, `failure-to-diagnose.html`, `resources.html`, `contact.html`.
 - Don't create a page until it's requested.
 - `/images` holds the real site assets.
 - `/reference` holds screenshots of the design references and the current site. Never link to anything in `/reference` from the site.
