@@ -101,6 +101,24 @@
     desktopQuery.addListener(handleBreakpointChange);
   }
 
+  var hero = document.querySelector(".hero");
+  var header = document.querySelector(".site-header");
+
+  if (header && hero) {
+    var updateStickyHeader = function () {
+      if (!desktopQuery.matches) {
+        header.classList.remove("is-stuck");
+        return;
+      }
+      var stickPoint = hero.offsetTop + hero.offsetHeight - header.offsetHeight;
+      header.classList.toggle("is-stuck", window.scrollY > stickPoint);
+    };
+
+    window.addEventListener("scroll", updateStickyHeader, { passive: true });
+    window.addEventListener("resize", updateStickyHeader);
+    updateStickyHeader();
+  }
+
   if (backToTop) {
     var updateBackToTop = function () {
       backToTop.hidden = window.scrollY < 600;
